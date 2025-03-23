@@ -1,13 +1,17 @@
 import os
+import subprocess
+from datetime import datetime
 
-project_dir = r"C:\WEB DEV"  # Replace with your actual project path
+# Define your project folder path
+project_dir = r"C:\WEB DEV"
 os.chdir(project_dir)
 
-# Default commit message
-commit_message = "Auto-commit: Latest changes"
+# Generate a timestamped commit message
+commit_message = f"Auto-commit: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
 
-os.system("git add .")
-os.system(f'git commit -m "{commit_message}"')
-os.system("git push origin main")
+# Run Git commands using subprocess
+subprocess.run(["git", "add", "."])
+subprocess.run(["git", "commit", "-m", commit_message])
+subprocess.run(["git", "push", "origin", "main"])
 
-print("\n✅ Changes pushed successfully to GitHub!")
+print(f"\n✅ Changes pushed successfully with message: {commit_message}")
