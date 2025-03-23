@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formes in HTML</title>
+  </head>
+  <body>
+    <h1>Join AbhayXdev for web dev</h1>
+    <form action="post">
+      <div>
+        <label for="username"> Enter Your Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          autofocus
+          required
+        />
+      </div>
+      <div>
+        <input type="radio" name="gender" id="male" value="mail" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="Female">female</label>
+      </div>
+      <div>
+        <input type="checkbox" name="check" id="check" />
+        <label for="check">This is check box</label>
+      </div>
+      <div>
+        <label for="comment">Enter your comments here</label>
+        <!-- <br> this is not recommended -->
+        <br />
+        <textarea name="comment" id="comment" cols="30" rows="05">
+
+        </textarea>
+      </div>
+      <div>
+        <select name="fruit">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="mango">Mango</option>
+          <option value="grapes">Grapes</option>
+          <option value="orange">Orange</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
