@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selecter</title>
+  </head>
+  <style>
+    /* Element selector */
+    div {
+      color: red;
+      background-color: yellow;
+    }
+    /* Class selector */
+    .div2 {
+      color: rgb(15, 158, 235);
+      background-color: rgb(255, 165, 165);
+    }
+    /* ID selector */
+    #div3 {
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
+    }
+    /* Child selector */
+    h1 > p {
+      color: rgb(30, 0, 255);
+      background-color: rgb(244, 156, 214);
+    }
+    /* desendent selector */
+    div p {
+      color: rgb(255, 0, 0);
+      background-color: rgb(0, 255, 0);
+    }
+    /* universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* pseduo selector */
+    a:visited {
+      color: rgb(255, 0, 0);
+    }
+    a:link{
+      color: rgb(0, 255, 34);
+    }
+    a:active{
+      background-color: rgb(251, 10, 158);
+    }
+    a:hover{
+      background-color: rgb(0, 255, 255);
+    }
+    p:first-child{
+      color:rgb(240, 131, 36);
+    }
+  </style>
+  <body>
+    <div>
+      <h1>
+        Hey there I am a div selected by element selector. it will change the
+        color of all divs
+      </h1>
+    </div>
+    <div class="div2">
+      <h1>
+        Hey there I am a div selected by class selector it will change the color
+        of all divs with class red
+      </h1>
+    </div>
+    <div id="div3">
+      <h1>
+        Hey there I am a div selected by ID selector. it will change the color
+        of div with particular id
+      </h1>
+    </div>
+    <h1>
+      <p>
+        Hey there I am a para inside h1 selected by child selector. it will
+        change the color of all divs contaning para this work only if condition
+        of para inside h1 is true then it work
+      </p>
+    </h1>
+    <div>
+      <article>
+        <p>
+          Hey there I am a para inside article inside div selected by desendent
+          selector. it will change the color of all para inside div [no matter
+          if para is raped inside any other tag before getting inside div]
+        </p>
+      </article>
+    </div>
+    <h3>
+      A special type of selector target all element in file this is called
+      universal selector called by *
+    </h3>
+    <a href="https://www.youtube.com/">Go to Youtube</a>
+    <a href="https://www.facebook2.com/">Go to Facebook</a>
+    <main>
+      <p>
+        Hey i am first child
+      </p>
+      <p>
+        Hey i am second child
+      </p>
+    </main>
+  </body>
+</html>
