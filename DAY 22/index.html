@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS sizing Units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        color: maroon;
+        background-color: yellow;
+        border: solid 5px black;
+        /* width: 1024px; */
+        /* here px is sizing unit */
+        width: 50vw;
+        /* here vw is sizing unit */
+        /* vw stands for viewport width */
+        margin: auto;
+        height: 10vh;
+      }
+      .box2 {
+        margin: auto;
+      }
+      .contain {
+        box-sizing: border-box;
+        color: maroon;
+        background-color: yellow;
+        border: solid 5px black;
+        width: 80vw;
+        height: 70vh;
+        margin: 35px auto;
+        font-size: 18px;
+      }
+      .contain p {
+        /* font-size: 2em; */
+        /* em depends on the font-size of the parent element */
+        /* 1em = 16px */
+        font-size: 2rem;
+        /* rem depends on the font-size of the root element */
+        /* 1rem = 16px */
+      }
+      html {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box [margin: auto; work here]</div>
+    <span class="box2">
+      <pre>
+This is a span with class box2 [margin: auto; do not work here]
+margin: auto; only works with block level elements not inline elements
+    </pre
+      >
+    </span>
+    <div class="contain">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste
+        necessitatibus repellat neque totam quisquam excepturi alias laudantium
+        vitae voluptatibus et illo ducimus explicabo impedit, quos cumque libero
+        dolorum commodi nihil doloremque at dignissimos! Fuga eius, commodi,
+        corrupti magni ipsa incidunt neque delectus illo necessitatibus
+        doloremque rem molestiae iure. Molestias porro alias totam et nisi
+        itaque.
+      </p>
+    </div>
+  </body>
+</html>

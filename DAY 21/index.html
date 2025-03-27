@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS specificity</title>
-<style>
-    h1{
+    <style>
+      h1 {
         color: yellow;
-    }
-    .yellow{
+      }
+      .yellow {
         color: red !important;
-    }
-    .cred{
+      }
+      .cred {
         color: purple;
-    }
-    .cpurpel{
+      }
+      .cpurpel {
         color: aqua;
-    }
-</style>
-</head>
-<body>
-    <h1 class="yellow cred cpurpel"> CSS specificity</h1>
-</body>
+      }
+        #box {
+            color: maroon;
+            background-color: yellow;
+            border: solid 5px black;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class="yellow cred cpurpel">CSS specificity</h1>
+    <div id="box">
+        <h2>Specificity Calculation</h2>
+    <h4>
+      To calculate specificity, assign a value to each part of the selector:
+    </h4>
+    <ul>
+      <li>Universal Selector: 0 </li>
+      <li>Element selectors and pseudo-elements: 1</li>
+      <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+      <li>ID selectors: 100</li>
+      <li>Inline styles: 1000</li>
+      <li>!important attribute : 10000</li>
+    </div>
+    </ul>
+  </body>
 </html>

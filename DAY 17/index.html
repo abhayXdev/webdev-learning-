@@ -40,17 +40,21 @@
     a:visited {
       color: rgb(255, 0, 0);
     }
-    a:link{
+    a:link {
       color: rgb(0, 255, 34);
     }
-    a:active{
+    a:active {
       background-color: rgb(251, 10, 158);
     }
-    a:hover{
+    a:hover {
       background-color: rgb(0, 255, 255);
     }
-    p:first-child{
-      color:rgb(240, 131, 36);
+    p:first-child {
+      color: rgb(240, 131, 36);
+    }
+    p [data-a="man"] {
+      color: rgb(255, 0, 255) !important;
+      background-color: maroon;
     }
   </style>
   <body>
@@ -88,6 +92,12 @@
         </p>
       </article>
     </div>
+    <div>
+      <p data-a="man">
+        Hey there I am a para inside body selected by attribute selector. it
+        will change the color of all para inside body
+      </p>
+    </div>
     <h3>
       A special type of selector target all element in file this is called
       universal selector called by *
@@ -95,12 +105,8 @@
     <a href="https://www.youtube.com/">Go to Youtube</a>
     <a href="https://www.facebook2.com/">Go to Facebook</a>
     <main>
-      <p>
-        Hey i am first child
-      </p>
-      <p>
-        Hey i am second child
-      </p>
+      <p>Hey i am first child</p>
+      <p>Hey i am second child</p>
     </main>
   </body>
 </html>
