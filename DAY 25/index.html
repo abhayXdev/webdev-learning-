@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS list styling</title>
+    <style>
+        * {
+          box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+          margin: 0; /* Resets default margin for all elements */
+          padding: 0; /* Resets default padding for all elements */
+        }
+      nav ul li {
+         list-style-type: '🔥'; /*Removes default list styling */
+        background-color: yellow;
+        /* list-style-position: inside; Changes the position of the list item marker */
+        border: 2px solid black;
+        /* list-style-image: url("https://cdn-icons-png.flaticon.com/512/25/25694.png"); Adds a custom image as the list item marker */
+        
+        /* list-style: disc inside url("https://cdn-icons-png.flaticon.com/512/25/25694.png"); Combines multiple list styles */
+        display: inline-block;
+        padding: 3px;
+        padding-top: 5px;
+        margin: 100px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+  </body>
+</html>
