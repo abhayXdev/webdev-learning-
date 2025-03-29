@@ -9,36 +9,61 @@
         margin: 0;
         padding: 0;
       }
+      /* #card {
+        position: sticky;
+        top: 0px;
+        margin: 3px;
+        height: 111px;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+      } */
       .box1 {
-        background-color: red
+        background-color: red;
+        position: absolute;
+        top: 0px;
+        left: 0px;
       }
       .box2 {
-        background-color: blue
+        background-color: blue;
+        /* position: relative;
+        top: 34px;
+        left: 56px; */
       }
-        .box3 {
-            background-color: green;
-        }
-        .box4 {
-            background-color: yellow;
-        }
-        .box5 {
-            background-color: purple;
-        }
-      .box{
+      .box3 {
+        background-color: green;
+        /* position: fixed;
+         left: 8vw;
+         bottom: 0px; */
+      }
+      .box4 {
+        background-color: yellow;
+      }
+      .box5 {
+        background-color: purple;
+      }
+      .box {
         border: 2px solid black;
-        height: 131px;
-        width: 50vw;
+        height: 331px;
+        width: 70vw;
         margin: 3px;
         padding: 3px;
-
+      }
+      .parent {
+        padding: 43px;
+        margin: 34px;
+        border: 5px solid purple;
+        /* position: absolute; */
       }
     </style>
   </head>
   <body>
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
-    <div class="box box5"></div>
+    <div class="parent">
+      <div class="box box1" id="card"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+    </div>
   </body>
 </html>
