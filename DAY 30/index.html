@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variable</title>
+    <style>
+      /* Define CSS variables here global*/
+      :root {
+        --bg-color: rgb(233, 244, 254);
+        --nav-bg-color: rgb(162, 200, 234);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .nav {
+        /* background-color: rgb(162, 200, 234); */
+        background-color: var(--nav-bg-color);
+      }
+      .box {
+        /* background-color: rgb(233, 244, 254); */
+        background-color: var(--bg-color);
+      }
+      ul li:first-child {
+        --color: rgb(232, 15, 120);
+        background-color: var(--color);
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illo quae ex
+      asperiores deserunt eveniet atque at! Rem repellendus ducimus sint
+      provident omnis expedita impedit dolorem eveniet obcaecati? Reprehenderit,
+      aliquid. Consequuntur dolor quod, quae, excepturi, in similique distinctio
+      vero voluptas deserunt nulla nisi perspiciatis velit!
+    </div>
+  </body>
+</html>

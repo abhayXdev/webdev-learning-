@@ -3,72 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Exercise 3</title>
     <style>
-      .box {
-        width: 30vw;
-        height: 90vh;
-        margin: 10px;
-         border: 2px solid black; 
-        position: relative;
-        left: 25vw;
-        border-radius: 30px;
+      body {
+        background-color: aliceblue;
       }
-      .pic {
-        width: 90%;
-        height: 40%;
-        object-fit: cover;
-        position: absolute;
-        top: 20px;
-        left: 25px;
+
+      div {
+        background-color: white;
+        border: 25px solid rgb(255, 255, 255);
         border-radius: 15px;
-      }
-      .pos {
-        position: absolute;
-        top: 45%;
-      }
-      .pos2{
-        display: flex;
-      }
-      div nav ul li{
-        box-sizing: border-box;
-        display: flexbox;
-        padding: 5px;
-        margin: 15px;
-        list-style-type: none;
-        border: 1px solid black;
-        border-radius: 60px;
-        font-family: 'Arial Narrow Bold', sans-serif;
-        padding-right: 20px;
-        padding-left: 20px;
-      }
-      div h1{
-        padding-left: 20px;
+        width: 350px;
         position: relative;
-        top: 55%
+        left: 500px;
+        top: 30px;
+        height: 500px;
+        box-shadow: 14px 10px rgb(218, 213, 213);
       }
-      div p{
-        padding-left: 20px;
-font-size: larger;
+
+      div > img {
+        border-radius: 15px;
         position: relative;
-        top: 340px;
-        font-size: 20px;
+        right: 10px;
+        width: 105%;
+      }
+
+      .na1 {
+        margin-top: 7px;
+        margin-left: 8px;
+        border-radius: 50px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-style: none;
+        border: 2px gray solid;
+        color: gray;
+      }
+
+      .sigma {
+        color: rgb(50, 50, 232);
+        background-color: rgb(227, 227, 227);
+        position: relative;
+        left: 30%;
+        bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 50px;
+      }
+      .hp {
+        position: relative;
+        bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="box">
-      <img class="pic" src="image.JPG" alt="boat" />
-      <nav class="pos">
-        <ul class="pos2">
-          <li>Nature</li>
-          <li>Lake</li>
-        </ul>
-      </nav>
-      <h1>Lorem, ipsum dolor.</h1> 
-      <p> Eos, quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae id eum voluptatem nostrum alias sequi beatae rem voluptates repellat odio.</p>
+    <div>
+      <img
+        src="https://media.cntraveler.com/photos/5ad79fc6fa45355065f2047c/master/w_320,c_limit/Moraine-Lake,-Banff-National-Park-GettyImages-517747003.jpg"
+        alt="Nature"
+      /><br />
+      <button class="na1">Nature</button>
+      <button class="na1">Lake</button>
+      <h2 class="hp">Lorem, ipsum dolor.</h2>
+      <p class="hp">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab cum
+        dolore recusandae nesciunt velit, id totam eaque illo dolores! Quod
+        dolores qui sed accusantium asperiores itaque. Voluptate perspiciatis
+        laudantium exercitationem quisquam illum!
+      </p>
+      <button class="sigma">Read More</button>
     </div>
-   
-    
   </body>
 </html>

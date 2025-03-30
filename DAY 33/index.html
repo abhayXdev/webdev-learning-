@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+
+    
+    <style>
+      :root {
+        --nav-color: #00ced1;
+        --text-color: white;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Arial Narrow Bold", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--nav-color);
+        list-style-type: none;
+        padding: 15px 20px;
+        align-items: center;
+      }
+      .menu {
+        list-style: none;
+        display: flex;
+      }
+      .menu li {
+        padding: 10px 20px;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .menu li:hover {
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .menu-toggle {
+        display: none;
+        font-size: 24px;
+        color: var(--text-color);
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background: var(--nav-color);
+          text-align: center;
+        }
+
+        .menu.active {
+          display: flex;
+        }
+        .menu-toggle {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-toggle"onclick="toggleMenu()" >&#9776;</div>
+      <ul class="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Service</li>
+        <li>Contacts</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
